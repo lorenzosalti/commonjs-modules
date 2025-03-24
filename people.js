@@ -15,7 +15,18 @@ const hobbies = require('./hobbies.js');
 
 
 
-console.log(fullName(firstName, lastName));
+// console.log(fullName(firstName, lastName));
 
-console.log(hobbies(hobbyOne, hobbyTwo, hobbyThree));
+// console.log(hobbies(hobbyOne, hobbyTwo, hobbyThree));
 
+console.log(people());
+
+
+
+
+function people() {
+  return {
+    fullName: fullName(firstName, lastName),
+    hobbies: hobbies(hobbyOne, hobbyTwo, hobbyThree)
+  }
+}
